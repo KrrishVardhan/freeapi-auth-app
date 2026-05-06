@@ -40,7 +40,7 @@ export function App() {
     })
     const data = await res.json()
     console.log(data)
-    if (res.status === 200) {
+    if (res.status === 201) {
       toast.success("Account created!")
     } else {
       toast.error("Failed!")
