@@ -1,13 +1,13 @@
 # React Auth UI
 
-A simple authentication UI built with React, Tailwind CSS, and shadcn/ui.
+A simple authentication UI built with React, Tailwind CSS, shadcn/ui, and Sonner.
 
 ## Features
 
 - Login & Register modes
 - Dynamic form switching
 - API integration using Fetch
-- Toast notifications
+- Toast notifications with Sonner
 - Minimal modern UI
 
 ## Tech Stack
@@ -15,6 +15,7 @@ A simple authentication UI built with React, Tailwind CSS, and shadcn/ui.
 - React
 - Tailwind CSS
 - shadcn/ui
+- Sonner
 
 ## Run Locally
 
