@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { Toaster, toast } from "sonner"
 import {
   Field,
   FieldDescription,
@@ -10,7 +11,6 @@ import {
   Card,
   CardAction,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -40,8 +40,10 @@ export function App() {
     })
     const data = await res.json()
     console.log(data)
-    if (res.status == 200) {
-      console.log("Done!")
+    if (res.status === 200) {
+      toast.success("Account created!")
+    } else {
+      toast.error("Failed!")
     }
   }
   const login = async () => {
@@ -57,8 +59,10 @@ export function App() {
     })
     const data = await res.json()
     console.log(data)
-    if (res.status == 200) {
-      console.log("Logged in!")
+    if (res.status === 200) {
+      toast.success("Logged in successfully!")
+    } else {
+      toast.error("Failed!")
     }
   }
 
@@ -74,6 +78,7 @@ export function App() {
 
   return (
     <div className="p-6 flex items-center justify-center min-h-screen">
+      <Toaster />
       {/* <Button className="mt-2" onClick={register}>Register</Button> */}
       <Card className="w-full max-w-sm">
         <CardHeader>

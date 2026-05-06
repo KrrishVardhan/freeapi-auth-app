@@ -1,21 +1,23 @@
-# React + TypeScript + Vite + shadcn/ui
+# React Auth UI
 
-This is a template for a new Vite project with React, TypeScript, and shadcn/ui.
+A simple authentication UI built with React, Tailwind CSS, and shadcn/ui.
 
-## Adding components
+## Features
 
-To add components to your app, run the following command:
+- Login & Register modes
+- Dynamic form switching
+- API integration using Fetch
+- Toast notifications
+- Minimal modern UI
+
+## Tech Stack
+
+- React
+- Tailwind CSS
+- shadcn/ui
+
+## Run Locally
 
 ```bash
-npx shadcn@latest add button
-```
-
-This will place the ui components in the `src/components` directory.
-
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button"
-```
+npm install
+npm run dev
