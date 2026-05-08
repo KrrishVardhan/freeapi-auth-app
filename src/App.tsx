@@ -90,13 +90,10 @@ export function App() {
           </CardAction>
         </CardHeader>
         <CardContent>
-          <FieldSet className="w-full max-w-xs">
+          <FieldSet className="w-full">
             <FieldGroup>
               <Field>
                 <FieldLabel htmlFor="username">Username</FieldLabel>
-                <FieldDescription>
-                  {!isRegister ? null : 'Choose a unique username for your account.'}
-                </FieldDescription>
                 <Input id="username" value={username} type="text" placeholder="krrish" onChange={(e) => { setusername(e.target.value) }} />
               </Field>
 
